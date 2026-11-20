@@ -1,7 +1,7 @@
 import React,{ useEffect, useState } from "react";
 import { Search, MapPin, Wind, Droplets, Thermometer, Sunrise, CloudSun, Cloud, Sun, CloudRain, CloudSnow, CloudLightning, LoaderCircle } from "lucide-react";
 
-const API = "http://localhost:5000";
+const API = "https://weather-now-api-pxpl.onrender.com";
 function weatherLabel(code) {
   if (code === 0) return "Clear sky";
   if ([1,2,3].includes(code)) return code === 1 ? "Mainly clear" : code === 2 ? "Partly cloudy" : "Overcast";
